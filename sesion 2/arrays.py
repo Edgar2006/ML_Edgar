@@ -26,16 +26,17 @@ sum2 = np.array([4,5,6])
 resArr = np.array([1,2,4,5,6,7])
 #print(resArr.reshape(2,3))
 
+arrSize = 20
+maxValue = 5
 
-
-v = np.random.randint(5, size= np.random.randint(20, size=1))
+v = np.random.randint(maxValue, size= np.random.randint(arrSize, size=1))
 print(v) 
 mean = np.mean(v)
 max_val = np.max(v)
 min_val = np.min(v)
 sum_val = np.sum(v)
 sort = np.sort(v)
-r_sort = v[::-1]
+r_sort = np.random.permutation(v)
 square = v * v
 sqrt_v = np.sqrt(v)
 
